@@ -1,0 +1,60 @@
+.clock-face {
+  padding: 20px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  position: relative;
+  box-shadow: 0px 0px 20px rgb(252, 250, 250),
+    inset 0px 0px 5px rgb(175, 172, 172);
+}
+
+.hour-hand,
+.minute-hand,
+.second-hand {
+  position: absolute;
+  left: 50%;
+  transform-origin: bottom center;
+  transform: translateX(-50%);
+  background-color: rgb(119, 116, 116);
+}
+
+.hour-hand {
+  width: 6px;
+  height: 40%;
+  clip-path: polygon(70% 30%, 20% 100%, 100% 100%);
+  background-color: rgb(100, 100, 100);
+}
+
+.minute-hand {
+  width: 8px;
+  height: 40%;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  background-color: rgb(80, 80, 80);
+}
+
+.second-hand {
+  position: absolute;
+  width: 2px;
+  height: 40%;
+  background-color: rgb(100, 100, 100);
+}
+
+.second-mark {
+  position: absolute;
+  width: 2px;
+  height: 8px;
+  background-color: gray;
+  top: 47%;
+  left: 50%;
+  transform-origin: bottom center;
+}
+
+.hour-mark {
+  position: absolute;
+  width: 3px;
+  height: 10px;
+  background-color: black;
+  top: 47%;
+  left: 50%;
+  transform-origin: bottom center;
+}
